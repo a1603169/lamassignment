@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap" rel="stylesheet">
+ 
+ <style>
+      a { text-decoration:none; }
+      html {
+        background-color : rgb(244, 245, 240);
+        width: 1200px;
+        height: 5000px;
+         }
+      #topMenu {
+        height: 40px;
+        width: 1000px;
+        }
+        .logo {font-family: 'Big Shoulders Display', cursive;
+          
+          margin-right: 290px;
+          text-shadow: 0px 2px 2px grey;
+          font-size: 30px;
+          font-style: italic;
+        }
+      #topMenu ul li {
+        list-style: none;
+        color:black;
+        float: left;
+        line-height: 35px;
+        text-align: center;
+        height: 50px;
+        display: block;
+        text-shadow: 0px 2px 2px grey;
+      }
+      #topMenu .menuLink {
+
+        display:block;
+        width: 100px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Arial;
+        background-color: whitesmoke;
+      }
+      #topMenu .menuLink:hover {
+        color: orange;
+        background-color: purple;
+      }
+      
+      #middleMenu1 {
+        height: 700px;
+        width: 1000px;
+        margin-top: 10px;
+        margin-left: 30px;
+        background-color: rgb(63, 103, 69);
+      }
+
+      #menu1Word {
+        font-family: arial;
+        font-weight: 900;
+        font-size: 75px;
+        color: white;
+        padding-top : 110px;
+        padding-left: 100px;
+        text-shadow: 2px 2px 2px grey
+        
+      }
+
+      #menu1Paragraph1 {
+        font-family: arial;
+        font-weight: 500;
+        font-size: 20px;
+        color: white;
+        padding-left: 100px;
+        margin-bottom: 100px;
+        text-shadow: 1px 1px 1px grey
+      }
+
+      #developerName {
+        height: 75px;
+        width: 300px;
+        background-color: white;
+        text-align: center;
+        margin-left: 100px;
+        font-family: arial;
+        font-weight: 700;
+        padding-top: 20px;
+        font-size: 28px;
+        position: absolute;
+        z-index: 6;  
+        border: 1px solid rgb(63, 103, 69);
+        box-shadow: 0px 2px 2px black;
+        border-radius: 20%;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+
+
+      }
+      #myphoto {
+        height: 85px;
+        margin: 0px 0px 200px 110px;
+        position: relative;
+        z-index: 89;
+      }
+      #loading {
+        height: 55px;
+        margin: 0px 0px 220px 180px;
+        position:relative;
+        z-index: 87;
+        box-shadow: 0 4px 4px orange;
+      
+      }
+      #menu1Paragraph2 {
+        color: grey;
+        height:35px;
+        position: relative;
+        right: 240px;
+        bottom: 205px;
+        z-index: 90;
+        font-weight: 700;
+        font-size: 19px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+      }
+      #circle {
+        width: 140px;
+        height: 140px;
+        background-color: #6B8E23;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        left: 700px;
+        bottom: 700px;
+        line-height: 140px;      
+        font-family: 'Big Shoulders Display', cursive;
+        font-weight: 700;
+        color: white;
+        z-index: 2;
+        box-shadow: 0 4px 4px black;
+        }
+        #orangeBackground {
+         width: 200px;
+         height: 200px;
+         position: relative;
+         left: 750px;
+         bottom: 730px;
+         z-index: 35;
+         box-shadow: 0 4px 4px black;
+        }
+        #nicoByungsin {
+          width: 200px;
+          height: 200px;
+          position: relative;
+          left: 433px;
+          bottom: 683px;
+          z-index: 24;
+          
+        box-shadow: 0 2px 2px black;
+        }
+        #menu1Paragraph3 {
+          background-color: rgb(30, 51, 34);
+          font-style: italic;
+          padding: 130px 20px 100px 20px;
+          text-overflow: ellipsis;
+          white-space:nowrap;
+          display:-webkit-box;
+          font-size: 15px;
+          color: white;
+          display: inline-block;
+          text-align: bottom;
+          z-index: 3;
+          position: relative;
+          left: 215px;
+          bottom: 630px;
+          vertical-align: text-bottom;
+          box-shadow: 0 4px 4px black;
+        }
+
+       #middleMenu2 {
+         margin: 70px 0px 0px 20px;
+         height : 150px;
+         width : 333px;   
+         }
+       #menu2Word1 {
+         color: rgb(192, 193, 188);
+         font-size: 15px;
+         font-family:'Big Shoulders Display', cursive;
+         position: relative;
+         left: 20px;
+         margin-bottom: -10px;
+         }
+       #menu2Paragraph1 {
+         font-size: 32px;
+         margin-bottom: 20px;
+         height: 50px;
+         position: relative;
+         left: 20px;
+         line-height: 35px;
+         float:left;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+
+         
+         }
+        #menu2image1 {
+          float: right;
+          position: relative;
+          left: 250px;
+          bottom: 120px;
+          height: 200px;
+          width: 200px;
+        }
+        #menu2Word2 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          position: relative;
+          left: 700px;
+          bottom: 100px;
+          font-size: 60px;
+
+        }
+        #menu2Paragraph2 {
+          position: relative;
+          font-size: 15px;
+          color: rgb(192, 193, 188);
+          line-height:15px;
+        }
+        #menu2Word3 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          position: relative;
+          left : 200px;
+          bottom: 135px;
+          
+        }
+        #menu2Paragraph3 {
+          position: relative;
+          left: 200px;
+          bottom: 135px;
+                    font-size: 15px;
+                    color: rgb(192, 193, 188);
+        }
+        #middleMenu3 {
+        margin: 50px 0px 0px 30px;
+         height : 300px;
+         width : 1000px;   
+         }
+        #menu3Word1 { 
+          height: 100px;
+          white-space : nowrap; 
+          text-align: right;
+          vertical-align: center;
+          position :relative;
+          left : 290px;
+          top : 20px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 60px;
+        }
+        #menu3Paragraph1 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center;
+          position: relative;
+          top: 30px;
+          right: 20px;
+          color: rgb(192, 193, 188);
+          line-height: 30px;
+        }
+        #middleMenu4 {
+          margin: 0px 0px 0px 30px;
+         height : 500px;
+         width : 1100px;
+        }
+        #middle4Small1 {
+          background-color:white;
+          width:290px;
+          height: 200px;
+          margin: 30px;
+          float: left;
+          position: relative;
+          box-shadow: 2px 4px 4px black;
+        }   
+        #menu4Image1{
+          width: 10%;
+          height: 20%;
+          position: relative;
+          left: 30px;
+          top: 20px;
+        }
+        #menu4Word1 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 100px;
+          font-size: 25px;
+          position:relative;
+          left: 30px;
+          top: 5px;
+        }
+        #menu4Paragraph1 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 50px;
+          position:relative;
+          left: 30px;
+          bottom: 20px;
+          color:rgb(192, 193, 188);
+          line-height:5px;
+          }
+
+          #middle4Small2 {
+          background-color:white;
+          width:290px;
+          height: 200px;
+          float: left;
+          position: relative;
+          top: 30px;
+          box-shadow: 2px 4px 4px black;
+
+        }   
+        #menu4Image2{
+          width: 10%;
+          height: 20%;
+          position: relative;
+          left: 30px;
+          top: 20px;
+        }
+        #menu4Word2 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 100px;
+          font-size: 25px;
+          position:relative;
+          left: 30px;
+          top: 5px;
+        }
+        #menu4Paragraph2 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 50px;
+          position:relative;
+          left: 30px;
+          bottom: 20px;
+          color:rgb(192, 193, 188);
+          line-height:5px;
+          }
+          #middle4Small3 {
+          background-color:white;
+          width: 290px;
+          height: 200px;
+          margin: 30px;
+          float: left;
+          position: relative;
+ 
+          box-shadow: 2px 4px 4px black;
+        }   
+        #menu4Image3{
+          width: 10%;
+          height: 20%;
+          position: relative;
+          left: 30px;
+          top: 20px;
+        }
+        #menu4Word3 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 100px;
+          font-size: 25px;
+          position:relative;
+          left: 30px;
+          top: 5px;
+        }
+        #menu4Paragraph3 {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          line-height: 50px;
+          position:relative;
+          left: 30px;
+          bottom: 20px;
+          color:rgb(192, 193, 188);
+          line-height:5px;
+          }
+        #footerArticle1 {
+          height: 700px;
+          width: 500px;
+          position:relative;
+          bottom: 180px;
+          left: 30px;
+        }
+        #footerTitle1 {
+          padding-left: 30px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 45px;
+        }
+        #footerTitle1list{
+          position : relative;
+          left: 15px;
+          list-style-image: url(img/Checkbox.1.png); 
+          font-size: 25px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+        }
+        #footerTitle1Paragraph {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          position : relative;
+          left: 15px;
+          font-size: 20px;
+          color:rgb(192, 193, 188);
+          line-height: 35px;
+        }
+        #footerArticle2 {
+          float: right;
+          position: relative;
+          bottom: 50px;
+          left: 60px
+        }
+
+        #footer2Image1 {
+          position: relative;
+          bottom: 700px;
+          height: 100px;
+          width: 80px;
+          z-index: 5;
+          right: 40px;
+          box-shadow: 2px 4px 4px black;
+        }
+        
+        #f22{ 
+          position: relative;
+          bottom : 900px;
+          right: 300px;
+          background-color: rgb(24, 42, 28);
+          height: 500px;
+          width: 300px;
+          box-shadow: 2px 4px 4px rgb(24, 42, 28);
+          z-index: 3;
+          
+        }
+
+        #footer2Image2 {
+          position: relative;
+          width: 270px;
+          height: 300px;
+          display: block; 
+          margin: 0px auto; 
+          top: 15px;
+          padding-bottom: 0px;
+        }
+
+        #footer2Iamge2Sofa {
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 25px;
+          color: white;
+          position: relative;
+          top: 40px;
+          left: 20px;
+          line-height: 30px;
+        }
+
+        #footer2Image2Paragraph {
+          line-height: 25px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          position: relative;
+          top: 30px;
+          left: 20px;
+          color:rgb(192, 193, 188);
+
+        }
+
+        #footer2Iamge2button {
+          position: relative;
+          top: 40px;
+          display: block;
+          margin: 0px auto;
+          width: 270px;
+          height: 30px;
+          font-size: 15px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          border: 1px solid rgb(192, 193, 188);
+          background-color: rgb(24, 42, 28);
+          color: white;
+
+        }
+
+        #footer2Image2energy{
+          height: 200px;
+          width: 250px;
+          position: relative;
+          bottom: 1200px;
+          right: 450px;
+          box-shadow: 2px 4px 4px black;
+        }
+        #footerArticle3{
+          float: right;
+          position: relative;
+          bottom: 150px;
+        }
+        #footer3Smalltitle{
+          color:grey;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 20px;
+          position: relative;
+          top: 30px;
+        }
+        #footer3Title{
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 45px;
+        }
+        #footer3Paragraph{
+          color:rgb(192, 193, 188);
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 1.5em;
+        }
+        #footerArticle4{
+          float:left;
+          position:relative;
+          left: 100px;
+          bottom: 140px;
+        }
+        #footer4Image1{
+          position: relative;
+          width: 130px;
+          height: 130px;
+          top: 80px;
+          left: 230px;
+        }
+        #f42 { 
+          background-color: rgb(24, 42, 28);
+          height: 165px;
+          width: 330px
+          
+        }
+        #footer4Image2{
+          width: 145px;
+          height: 145px;
+          margin:10px 0px 10px 10px;
+          float: left;
+        }
+        #footer4Image3{
+          width: 145px;
+          height: 145px;
+          margin: 10px 10px 10px 0px;
+          float:right;
+        }
+        #footer4Image4{
+          position: relative;
+          width: 130px;
+          height: 130px;
+          bottom: 50px;
+          right: 50px;
+        }
+        #footerArticle5{
+          margin-left: 30px;
+          margin-top: 10px;
+          background-color: rgb(11,18,11);
+          width:950px;
+          height:600px;
+          position:relative;
+          top: 300px;
+        }
+        #fa5Contact {
+          width:300px;
+          height:300px;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 95px;
+          color: white;
+          position:relative;
+          bottom: 290px;
+          left: 100px;
+        }
+        #fa5Paragraph{
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          color: white;
+          position:relative;
+          bottom: 70px;
+          left: 100px;
+          font-size: 20px;
+        }
+        #fa5Text{
+          font-size: 10px;
+          height: 50px;
+          width:350px;
+          position:absolute;
+          bottom: 250px;
+          left:550px;
+          font-size: 20px;
+          z-index: 2;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+        }
+        #fa5Button{
+          height: 45px;
+          position:absolute;
+          bottom: 255px;
+          left: 770px;
+          font-size: 15px;
+          z-index: 3;
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          width: 135px;
+          text-align: left;
+          background-color: rgb(253, 102,31);
+          color:white;
+          border: 1px solid rgb(253, 102,31);
+        }
+        #fa5Direct{
+          width: 39px;
+          height: 39px;
+          position:absolute;
+          bottom: 258px;
+          left: 863px;
+          z-index:4;
+        }
+        #bottomMenu{
+          font-family:'Big Shoulders Display', cursive;
+          font-weight: bold;
+          font-size: 15px;
+          color:white;
+
+        }
+        #bottomLogo{
+          font-family: 'Big Shoulders Display', cursive;
+          text-shadow: 0px 2px 2px grey;
+          font-size: 30px;
+          font-style: italic;
+          position:relative;
+          top: 20px;
+          left: 50px;
+        }
+        #bottomLink{
+        display:block;
+        width: 100px;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: Arial;
+        color:white;
+        float:left;
+        position:relative;
+        left: 300px;    
+
+        }
+        #imageLink{
+          float:right;
+          position:relative;
+          left:30px;
+          z-index:77;
+        }
+        #facebookLink{
+          position:relative;
+          bottom: 20px;
+        }
+        #instagramLink{
+          position:relative;
+          bottom: 15.3px;
+          left:3px;
+        }
+        #youtubeLink{
+          position:relative;
+          bottom: 19px;
+          left: 6px;
+        }
+        #hr{
+          position:relative;
+           left: 90px;}
+        #copyright{
+          font-family: 'Big Shoulders Display', cursive;
+          font-weight:bold;
+          color:grey;
+          z-index: 61;
+          position:relative;
+          top: 25px;
+          left: 200px;
+          text-align: right;
+          
+        }
+          </style>
+<header>
+  <title>My first portfolio</title>
+  <meta charset="utf-8" />
+<nav id="topMenu">
+  
+<ul>
+<li><a class="logo" href="#">Besnik.</a></li>
+<li><a class="menuLink" href="#">About</a></li>
+<li><a class="menuLink" href="#">Product</a></li>
+<li><a class="menuLink" href="#">Service</a></li>
+<li><a class="menuLink" href="#">Contact</a></li>
+<li><a class="menuLink" href="#">Login</a></li>
+<li><a class="menuLink" href="#">Sign up</a></li>
+</ul>
+</nav>
+</header>
+<body> 
+  <article id="middleMenu1">
+    <div id="menu1Word"> Shopify</br> products </div>
+    <p id="menu1Paragraph1">More than 80,000+ companies trust </br>
+    our business</p>
+    <div id="box"></div>
+    <div id="developerName">Seunghun Bang</div>
+    <img id="myphoto" src="img/myphoto1.png" alt="내사진">
+    <img id="loading" src="img/load1.png" alt="재생">
+    <p2 id="menu1Paragraph2">Watch our Intro Videos</p2> </br>
+    <div id="circle">SPECIAL-OFFERS</div>
+    <img id="orangeBackground" src="img/5555.PNG" alt="오렌지인물">
+    <img id="nicoByungsin" src="img/55556.jpg" alt="니코와추억">
+    <p3 id="menu1Paragraph3">Install the app you are just</br> a click away to convery.</p3>
+    
+  </article>
+
+  <article id="middleMenu2">
+    <div id="menu2Word1">SERVICE WE PROVIDE</div>
+    <p id="menu2Paragraph1">Build on both: Google </br>web stories and AMP website format</p>
+    <img id="menu2image1" src="img/img2.PNG" alt="엄지척" >
+    <div id="menu2Word2">5640<div>
+    <p id="menu2Paragraph2">Product sale per day</br> using out tools</p>
+    <div id="menu2Word3">6M+</div>
+    <p id="menu2Paragraph3">Downloaded total in</br> 2019-2020</p>
+  </article>
+
+  <article id="middleMenu3">
+    <div id="menu3Word1">Our creative process.</div>
+    <p id="menu3Paragraph1">Financial institutions provide financial services for members and clients. It is also</br>termed as financial intermediarie
+      s because they act as middlemen between the</br> savers and borrows.</p>  
+  </article>
+
+  <article id="middleMenu4">
+
+    <div id="middle4Small1">
+    <img id="menu4Image1" src="img/5.1.png" alt="For SEO">
+    <div id="menu4Word1">For SEO</div>
+    <p2 id="menu4Paragraph1">Improve search ranking son</br> mobile, automatically.</p2>
+    </div>
+
+    <div id="middle4Small2">
+    <img id="menu4Image2" src="img/4.1.png" alt="For content">
+    <div id="menu4Word2">For content</div>
+    <p2 id="menu4Paragraph2">Your new content creation tool</br> for better engagement.</p2>
+    </div>
+
+    <div id="middle4Small3">
+    <img id="menu4Image3" src="img/3.1.png" alt="For conversion">
+    <div id="menu4Word3"> For conversion </div>
+    <p2 id="menu4Paragraph3">AMP experience on desktop</br> oiptimized for conversion.</p2>
+    </div>
+
+  </article>
+
+  </body>
+<footer>
+  <article id="footerArticle1">
+    <h1 id="footerTitle1">Why product</br> stories? learn more</h1>
+    <ul>
+      <li id="footerTitle1list"> SEO optimized, high Google rank</li>
+      <p id="footerTitle1Paragraph"> By converting all your Shopify product pages</br>
+           in AMP format</p>
+      <li id="footerTitle1list">Fast loading, low bounce rates</li>
+      <p id="footerTitle1Paragraph"> AMP is the latest Google technology allowing</br>
+          websites to load at much higher speeds</p>
+      <li id="footerTitle1list">Immersive, direct conversion</li>
+      <p id="footerTitle1Paragraph"> The story format is already a proven layout</br>
+          for giving users a more interactive.</p>
+    </ul>
+    </article>
+    <article id="footerArticle2">
+
+      <img id="footer2Image1" src="img/dashboard.PNG" alt="대쉬보드">
+      <div id="f22">
+      <img id="footer2Image2" src="img/sofa.PNG" alt="소파">
+      <div id="footer2Iamge2Sofa">Classic Sofa</div>
+      <p id="footer2Image2Paragraph">Our popular Mika style is a modern take</br> on the classic button down sofa</p>
+      <input id="footer2Iamge2button" type="button" name="buy button" value="Buy Now for $56">
+      </div>
+
+      <img id="footer2Image2energy" src="img/energy1.png" alt="에너지 버튼">
+    </article>
+  <article id="footerArticle3">
+
+    <h4 id="footer3Smalltitle">CREATIVE INTELLIGENCE</h4>
+    <h1 id="footer3Title">Know your ads inside </br>& out-perform.</h1>
+    <p id="footer3Paragraph">When do I feature my Product? Which speokesperson</br> is my target audience reponding
+      to? How optimize my</br> call to action? Get real-time answers to improve your</br> 
+      creative mid-flight. And see what's worked in the past</br>to get intel for your next campaign.
+      </p>
+
+    </article>
+        <article id="footerArticle4">
+    
+      <img id="footer4Image1" src="img/friends.PNG" alt="페북전화">
+
+      <div id="f42">
+      <img id="footer4Image2" src="img/happy.jpg" alt="신난사람">
+      <img id="footer4Image3" src="img/sofa.PNG" alt="소파">
+      </div>
+
+      <img id="footer4Image4" src="img/dots.PNG" alt="점들">
+  </article>
+
+<article id="footerArticle5">
+    <h1 id="fa5Contact">Contact </br>
+        With us.</h1>
+        <p id="fa5Paragraph">More than 80,000+ companies trust</br>
+          our business</p>
+    <div>
+      <input type="text" placeholder="Your business email .." id="fa5Text">
+      <input type="button" name="Get started" value="Get started" id="fa5Button">
+      <img src="img/direction.PNG" type="button" alt="화살표" id="fa5Direct">
+
+    </div>
+   
+  <ul id="bottomMenu">
+    <div id="bottomLogo" href="#">Besnik.</div>
+    <li id="bottomLink" href="#">About</li>
+    <li id="bottomLink" href="#">Product</li>
+    <li id="bottomLink" href="#">Service</li>
+    <li id="bottomLink" href="#">Contact</li>
+    <div id="imageLink">
+    <img src="img/facebook.PNG" href="https://www.facebook.com/" alt="페북링크" id="facebookLink">
+    <img src="img/instagram.PNG" href="https://www.instagram.com/" alt="인스타링크" id="instagramLink">
+    <img src="img/youtube.PNG" href="https://youtube.com/" alt="유튭링크" id="youtubeLink">
+  </div>
+  </ul>
+</br>
+  <hr id="hr">
+<div id="copyright">Copyright ⓒ 2021 Besnik Creative</div>
+</footer>
+</article>
+</html>
